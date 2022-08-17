@@ -7,7 +7,8 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "netlify": "netlify"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.4",
@@ -39,6 +40,7 @@
     "dotenv": "^16.0.1",
     "eslint": "8.20.0",
     "eslint-config-next": "12.2.3",
+    "netlify-cli": "^10.17.8",
     "typescript": "4.7.4"
   }
 }
