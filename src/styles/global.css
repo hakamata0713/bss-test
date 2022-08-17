@@ -1,0 +1,14 @@
+/*ページネーション*/
+.MuiPagination-ul {
+    justify-content: center;
+}
+
+/*カルーセル*/
+.slick-prev:before,
+.slick-next:before
+{
+    color: black!important;
+}
+.slider-item-480 img{
+    margin: 0;
+}

@@ -1,0 +1,52 @@
+import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
+import React, { useCallback } from 'react'
+import { useRouter } from 'next/router';
+import { Pagination } from '@material-ui/lab';
+
+const PAGE = 10 as const;
+
+const DynamicPage: NextPage = () => {
+  const router = useRouter();
+  const offset = router.query.offset
+    ? Number.parseInt(String(router.query.offset), 10)
+    : 1;
+
+  const handleChangePage = useCallback(
+    (_: React.ChangeEvent<unknown>, page: number) => {
+      void router.push(`/page/${page}`);  
+    },
+    [router],
+  );
+  
+  return (
+    <div>
+      <h1>{router.query.offset}</h1>
+      <Pagination
+        count={PAGE}
+        variant="outlined"
+        shape="rounded"
+        color="secondary"
+        page={offset}
+        onChange={handleChangePage}
+      />
+    </div>
+  )
+}
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const paths = [...Array(PAGE)].map((_, index) => ({
+    params: {
+      offset: `${index + 1}`,
+    },
+  }))
+
+  return { paths, fallback: false };
+}
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  return {
+    props: {},
+  }
+}
+
+export default DynamicPage;
