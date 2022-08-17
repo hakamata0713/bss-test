@@ -17,6 +17,7 @@
     "@emotion/styled": "^11.9.3",
     "@material-ui/core": "^4.12.4",
     "@material-ui/lab": "^4.0.0-alpha.61",
+    "@netlify/plugin-nextjs": "^4.16.0",
     "chakra-paginator": "^0.7.3",
     "dayjs": "^1.11.4",
     "framer-motion": "^6.5.1",
