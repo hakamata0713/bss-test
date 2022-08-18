@@ -57,7 +57,7 @@ const Home: NextPage<Props> = ({ news }) => {
     <>
     <Header />
     <Box maxW="full" h="100vh" sx={outerBoxStyles}>
-      <Box sx={innerBoxStyles} backdropFilter='auto' backdropContrast='40%'>皆様のオフィス、IT環境をより安全に、そして快適に</Box>
+      <Box sx={innerBoxStyles} backdropFilter='auto' backdropContrast='40%' px={{ base: 5, sm: 5, md: 0, lg: 0 }}>皆様のオフィス、IT環境をより安全に、そして快適に</Box>
     </Box>
     <Container as="main" maxW="container.lg" marginTop="10" marginBottom="16">
       <CarouselCard />

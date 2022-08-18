@@ -41,7 +41,7 @@ export default class SimpleSlider extends Component {
       ]
     };
     return (
-      <Box m="0 auto" w="calc( 100% - 1.5rem - 50px )">
+      <Box m="0 auto" w="calc( 100% - 1.5rem - 60px )">
         <Slider {...settings}>
           <Box p={1}>
             <Link href="#"><Image src="images/banner01.webp" m="0 auto" /></Link>

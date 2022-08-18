@@ -62,7 +62,7 @@ const IndexPage: React.FC = () => {
           <Image
             boxSize='150px'
             objectFit='cover'
-            width='fit-content'
+            width='auto'
             src="images/iso-isms.webp" 
           />
           <Text fontSize="sm" color="gray.500">登録証番号:JQA-IM0685</Text>
