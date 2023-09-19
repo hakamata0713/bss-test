@@ -33,9 +33,12 @@ type Props = {
 };
 
 
-const Home: NextPage<Props> = ({ news, totalCount }) => {
-  const currentPage = "ニュース";
+const Home: NextPage<Props> = ({ news, totalCount, currentPage }) => {
   const router = useRouter();
+  
+  // currentPageがundefinedの場合は1ページ目として扱う
+  const pageNumber = currentPage || 1;
+  
   const handleChangePage = (p: number) => {
     void router.push(`/page/${p}`); 
   }
@@ -49,8 +52,8 @@ const Home: NextPage<Props> = ({ news, totalCount }) => {
       <Hide breakpoint='(max-width: 30em)'>
       <Pagination
           count={pageCount}
-          page={currentPage}
-          onChange={(p, number) =>handleChangePage(number)}
+          page={pageNumber}
+          onChange={(p, number) => handleChangePage(number)}
           boundaryCount={1}
           siblingCount={1}
           color="primary"

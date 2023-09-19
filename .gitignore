@@ -10,7 +10,9 @@
 
 # next.js
 /.next/
-/out/
+/.next/cache/webpack/client-development/27.pack
+/.next/cache/webpack/client-development/28.pack
+/.next/cache/webpack/client-production/0.pack
 
 # production
 /build
