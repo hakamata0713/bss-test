@@ -40,7 +40,7 @@ export const Header: FC = () => {
                 >
 
                     <NextLink href="/" passHref>
-                        <Image src="../images/brand.webp" alt="会社ロゴ" w="220px" h="55px" cursor="pointer"/>
+                        <Image src="/images/brand.webp" alt="会社ロゴ" w="220px" h="55px" cursor="pointer"/>
                     </NextLink>
 
                     <Hide breakpoint='(max-width: 767px)'>

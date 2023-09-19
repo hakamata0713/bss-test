@@ -30,7 +30,7 @@ export const Footer: FC = () => {
                 >
                     <Stack gap="2" w={{ base: '100%', sm: '100%', md: '100%', lg: 'auto' }}>
                         <NextLink href="/" passHref>
-                            <Image src="../images/brand.webp" alt="会社ロゴ" w="220px" h="55px" cursor="pointer"/>
+                            <Image src="/images/brand.webp" alt="会社ロゴ" w="220px" h="55px" cursor="pointer"/>
                         </NextLink>
                         <Text>〒010-0948 秋田市川尻新川町9-35</Text>
                         <Text>受付時間 9:00～17:00(平日)</Text>

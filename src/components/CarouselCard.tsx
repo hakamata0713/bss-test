@@ -47,7 +47,7 @@ export default class SimpleSlider extends Component {
             <Link href="#"><Image src="images/banner01.webp" m="0 auto" /></Link>
           </Box>
           <Box p={1}>
-            <Link href="#"><Image src="images/banner02.webp" m="0 auto" /></Link>
+            <Link href="./services/it-solution/it-tool"><Image src="images/banner02.webp" m="0 auto" /></Link>
           </Box>
           <Box p={1}>
             <Link href="#"><Image src="images/banner03.webp" m="0 auto" /></Link>

@@ -33,7 +33,8 @@ type Props = {
 };
 
 
-const Home: NextPage<Props> = ({ news, totalCount, currentPage }) => {
+const Home: NextPage<Props> = ({ news, totalCount }) => {
+  const currentPage = "ニュース";
   const router = useRouter();
   const handleChangePage = (p: number) => {
     void router.push(`/page/${p}`); 
@@ -43,7 +44,7 @@ const Home: NextPage<Props> = ({ news, totalCount, currentPage }) => {
     <>
     <Header />
     <Container as="main" maxW="container.lg" marginTop="4" marginBottom="16">
-      <Breadcrumbs />
+      <Breadcrumbs  currentPage={currentPage} />
       <PostList news={news} />
       <Hide breakpoint='(max-width: 30em)'>
       <Pagination

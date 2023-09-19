@@ -21,11 +21,13 @@ type Props = {
 }
 
 export default function Article({ news }: Props) {
+    const currentPage = news.title;
+    const isNewsPage = true; // ニュースページ内の記事の場合はtrueに設定
     return (
         <Box>
             <Header />
             <Container as="main" maxW="container.md" marginTop="4" marginBottom="16">
-            <Breadcrumbs />
+            <Breadcrumbs currentPage={currentPage} isNewsPage={isNewsPage} /> {/* Breadcrumbs コンポーネント呼び出し */}
                 <Stack spacing="8">
                     <Heading as="h1" fontSize="4xl" lineHeight={1.6}>
                         {news.title}

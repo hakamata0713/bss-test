@@ -8,6 +8,7 @@ import React from "react";
 import {
   Container,
   Heading,
+  Link,
   Hide,
   Box,
   Image,
@@ -51,31 +52,31 @@ const IndexPage: React.FC = () => {
             <Table variant='simple' colorScheme='telegram' size="lg">
                 <Tbody>
                     <Tr>
-                        <Td>サーバー</Td>
-                        <Td>パソコン及び周辺機器</Td>
+                      <Td>サーバー</Td>
+                      <Td>パソコン及び周辺機器</Td>
                     </Tr>
                     <Tr>
-                        <Td>パッケージソフト</Td>
-                        <Td>ソフトウェア開発</Td>
+                      <Td>パッケージソフト</Td>
+                      <Td>ソフトウェア開発</Td>
                     </Tr>
                     <Tr>
-                        <Td>ハード及びソフトウェアメンテナンス</Td>
-                        <Td>ネットワーク設計、施工</Td>
+                      <Td>ハード及びソフトウェアメンテナンス</Td>
+                      <Td>ネットワーク設計、施工</Td>
                     </Tr>
                     <Tr>
-                        <Td>ITコンサルティング全般</Td>
-                        <Td>データエントリー</Td>
+                      <Td>ITコンサルティング全般</Td>
+                      <Td>データエントリー</Td>
                     </Tr>
                     <Tr>
-                        <Td>インターネットセキュリティ</Td>
-                        <Td>マイナンバー対策</Td>
+                      <Td><Link href="./it-solution/security" color='#3182CE'>インターネットセキュリティ</Link></Td>
+                      <Td>マイナンバー対策</Td>
                     </Tr>
                     <Tr>
-                        <Td>業務改善ツール</Td>
-                        <Td>IT補助金</Td>
+                      <Td><Link href="./it-solution/it-tool" color='#3182CE'>業務改善ツール</Link></Td>
+                      <Td><Link href="/news/bt1w0iembro4" color='#3182CE'>IT補助金</Link></Td>
                     </Tr>
                     <Tr>
-                        <Td>テレワーク構築支援</Td>
+                      <Td><Link href="./it-solution/telework" color='#3182CE'>テレワーク構築支援</Link></Td>
                     </Tr>
                 </Tbody>
             </Table>
@@ -89,3 +90,4 @@ const IndexPage: React.FC = () => {
 }
 
 export default IndexPage
+

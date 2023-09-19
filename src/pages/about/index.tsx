@@ -2,6 +2,7 @@
 import Head from "next/head";
 import { Header } from 'components/Header'
 import { Footer } from 'components/Footer'
+import { Breadcrumbs } from 'components/Breadcrumbs';
 import ReturnTopButton from 'components/ReturnTopButton';
 import React from "react";
 import { BsFillCircleFill } from "react-icons/bs"
@@ -28,6 +29,8 @@ import {
   TableContainer,
 } from "@chakra-ui/react";
 
+const currentPage = "会社案内";
+
 const IndexPage: React.FC = () => {
   return (
     <>
@@ -37,6 +40,7 @@ const IndexPage: React.FC = () => {
     </Head>
     <Header />
     <Container as="main" maxW="container.lg" marginTop="10" marginBottom="16">
+    	<Breadcrumbs currentPage={currentPage} />
         <Heading as="h2" size='lg' pt={5} textAlign="center">会社案内</Heading>
 
         <Heading size='md' mt={10} pl={2.5} borderLeft="solid 5px #0075c2">会社について</Heading>
